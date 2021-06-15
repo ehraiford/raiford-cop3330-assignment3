@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+ People ..>  Person : contains list of
+
+Class People {
+
+-ArrayList<Person> list;
++addPerson();
++sortPeople();
++getList();
+
+}
+
+Class Person{
+-String firstName;
+-String lastName;
+
++getFirstName();
++setFirstName();
++getLastName();
++setLastName();
+}
+@enduml

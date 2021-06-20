@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Website ..|> Folder : Contains array of
+Class Website {
+-String name
+-String author
+-ArrayList<Folder> folders
+
++generateDirectories()
++generateHTML()
++addFolder()
++setAuthor()
++getAuthor()
++getName()
++setName()
+}
+
+Class Folder {
+-String name
+-String path
+
++getName()
++setName()
++getPath()
++setPath()
+}
+@enduml

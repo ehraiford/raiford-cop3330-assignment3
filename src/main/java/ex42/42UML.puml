@@ -1,24 +1,28 @@
 @startuml
 'https://plantuml.com/sequence-diagram
- People ..|>  Person : contains list of
 
-Class People {
+ Employees ...|>  Employee : contains list of
+
+Class Employees {
 
 -ArrayList<Person> list;
 +addPerson();
-+sortPeople();
-+generateOutput();
 +getPerson();
++generateOutput();
++generateSpacing();
 }
 
-Class Person{
+Class Employee{
 -String firstName;
 -String lastName;
+-int salary;
 
 +getFirstName();
 +setFirstName();
 +getLastName();
 +setLastName();
++getSalary();
++setSalary();
 }
 
 @enduml

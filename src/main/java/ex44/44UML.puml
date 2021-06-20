@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Inventory ...|>Product : contains list of
+
+Class Inventory {
+-ArrayList<Product> index
+
++getIndex()
++addProduct()
+
+}
+Class Product {
+-String name
+-double price
+-int quantity
+
++getName()
++setName()
++getPrice()
++setPrice()
++getQuantity()
++setQuantity()
+
+}
+@enduml

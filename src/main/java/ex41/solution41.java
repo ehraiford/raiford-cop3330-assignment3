@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class solution41 {
     public static void main(String[] args){
-
+        //try in case file can't be opened
         try {
             //create file in for in.txt file.
             File inFile = new File("src/main/resources/exercise41_input.txt");

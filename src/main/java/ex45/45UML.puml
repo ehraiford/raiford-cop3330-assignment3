@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Class searchWord {
+-String original
+-String replacement
+
++setOriginal()
++getOriginal()
++setReplacement()
++getReplacement()
+}
+Class Phrase extends searchWord{
+-String phrase
+-int instancesofWord
+
++setPhrase()
++getPhrase()
++replaceWord()
+}
+
+@enduml

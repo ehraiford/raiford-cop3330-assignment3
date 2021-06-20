@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+Word--*Words
+Class Word {
+-String word
+-int instances
++incrementInstances()
++getInstances()
++setName()
++getName()
+}
+
+Class Words {
+-String phrase
+-ArrayList<Word> words
++getWords()
++addWord()
++setPhrase()
++getPhrase()
+}
+
+@enduml

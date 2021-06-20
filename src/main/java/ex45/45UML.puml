@@ -1,6 +1,6 @@
 @startuml
 'https://plantuml.com/sequence-diagram
-Class searchWord {
+Class SearchWord {
 -String original
 -String replacement
 
@@ -9,12 +9,13 @@ Class searchWord {
 +setReplacement()
 +getReplacement()
 }
-Class Phrase extends searchWord{
+Class Phrase extends SearchWord{
 -String phrase
--int instancesofWord
+-int instancesOfWord
 
 +setPhrase()
 +getPhrase()
++incrementInstancesOf()
 +replaceWord()
 }
 

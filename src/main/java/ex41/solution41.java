@@ -11,6 +11,7 @@ public class solution41 {
         try {
             //create file in for in.txt file.
             File inFile = new File("src/main/resources/exercise41_input.txt");
+            //create output for text
             PrintWriter out = new PrintWriter("exercise41_output.txt");
             //new scanner reading from file
             Scanner in = new Scanner(inFile);
